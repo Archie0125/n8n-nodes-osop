@@ -1,0 +1,32 @@
+{
+  "name": "n8n-nodes-osop",
+  "version": "0.1.0",
+  "description": "n8n community nodes for OSOP — import, export, and validate .osop.yaml workflows inside n8n.",
+  "keywords": ["n8n", "n8n-community-node-package", "osop", "workflow", "converter"],
+  "license": "Apache-2.0",
+  "homepage": "https://osop.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Archie0125/n8n-nodes-osop"
+  },
+  "main": "index.js",
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": ["dist/nodes/Osop/OsopImport.node.js", "dist/nodes/Osop/OsopExport.node.js", "dist/nodes/Osop/OsopValidate.node.js"]
+  },
+  "scripts": {
+    "build": "tsc && cp -r nodes/**/*.png dist/nodes/ 2>/dev/null || true",
+    "dev": "tsc --watch",
+    "lint": "eslint nodes/",
+    "prepublishOnly": "npm run build"
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "n8n-workflow": "*",
+    "typescript": "^5.0.0",
+    "@types/js-yaml": "^4.0.0"
+  }
+}
