@@ -54,7 +54,7 @@ OSOP is the OpenAPI of workflows — a YAML standard for defining AI agent and a
 
 - [OSOP Website](https://osop.ai)
 - [OSOP Spec](https://github.com/Archie0125/osop-spec)
-- [OSOP MCP Server](https://github.com/Archie0125/osop-mcp) — 12 MCP tools
+- [OSOP MCP Server](https://github.com/Archie0125/osop-mcp) — 5 MCP tools (validate, render, report, diff, risk_assess)
 - [Visual Editor](https://osop-editor.vercel.app)
 
 ## License
